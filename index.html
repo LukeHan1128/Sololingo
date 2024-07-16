@@ -14,7 +14,7 @@
       window.speechSynthesis.speak(msg);
     }
     document.querySelectorAll('input[type=button]').forEach((e)=>{
-      fntPlaySample(e.value)
+      e.addEventListener('click', fntPlaySample(e.value));
     });
   </script>
 </head>
