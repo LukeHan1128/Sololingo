@@ -1,3 +1,15 @@
+let chapter = {
+    '01': 0
+//    ,'02': 0
+//    ,'03': 0
+//    ,'04': 0
+//    ,'05': 0
+}
+
+function getRandomInt(max){
+    return Math.floor(Math.random() * max);
+}
+
 function getPlayIcon(data){
     var result = '';
     result = '<svg xmlns="http://www.w3.org/2000/svg" width="10%" fill="currentColor" class="bi bi-play align-middle playExample" viewBox="0 0 16 16" data-value="' + data + '">';
@@ -11,25 +23,40 @@ function shuffle(array){
 }
 
 function fntPlaySample(text){
+    speechSynthesis.cancel();
+    text = text.replaceAll('<br/>','　');
     var msg = new SpeechSynthesisUtterance();
     msg.voice = speechSynthesis.getVoices()[15];
     msg.lang = 'ko';
     msg.text = text;
-    window.speechSynthesis.speak(msg);
+    speechSynthesis.speak(msg);
 }
 
-function initializing(){
+function reset(){
+    document.querySelector('#answer').innerHTML = '';
+    document.querySelector('input[value=Next]').hidden = true;
+}
+
+function getQuestion(){
+    speechSynthesis.cancel();
+    reset();
     shuffle(list);
-    document.querySelector('#content').innerHTML = content;
+    var obj = list[0];
+    list.shift();
+
+    obj.list.push(obj.correct);
+    shuffle(obj.list);
+
+    document.querySelector('#content').innerHTML = obj.content;
 
     var example = '';
-    for(var i=0; i<list.length ;++i){
+    for(var i=0; i<obj.list.length ;++i){
         example += '<div class="col-12 mb-3 text-start">';
         example += '  <input type="button" value="' + (i+1) + '"';
         example += '    class="btn btn-info fw-bold text-light align-middle selectNumber"';
-        example += '    data-value="' + list[i] + '">';
-        example += '  <span class="align-middle"> ' + list[i] + '</span>';
-        example += getPlayIcon(list[i]);
+        example += '    data-value="' + obj.list[i] + '">';
+        example += '  <span class="align-middle"> ' + obj.list[i] + '</span>';
+        example += getPlayIcon(obj.list[i]);
         example += '</div>';
     };
     document.querySelector('#buttons').innerHTML = example;
@@ -39,16 +66,22 @@ function initializing(){
             fntPlaySample(e.dataset.value);
         });
     });
-    document.querySelector('.playContent').addEventListener('click', ()=>{fntPlaySample(content);});
+
+    document.querySelector('.playContent').innerHTML = getPlayIcon(obj.content);
+    document.querySelector('.playContent > svg').addEventListener(
+        'click'
+        , () => { fntPlaySample(document.querySelector('.playContent > svg').dataset.value); }
+    );
 
     document.querySelectorAll('.selectNumber').forEach((e)=>{
         e.addEventListener('click', ()=>{
+            speechSynthesis.cancel();
             var result = '<span class="fw-bold fs-1 text-danger">X</span>';
 
-            if(e.dataset.value == correct){
+            if(e.dataset.value == obj.correct){
                 result = '<span class="fw-bold fs-1 text-success">O</span>';
             }
-            document.querySelector('#answer').innerHTML = result + '<br/><span class="text-light">' + correct + '</span>';
+            document.querySelector('#answer').innerHTML = result + '<br/><span class="text-light">' + obj.correct + '</span>';
 
             document.querySelectorAll('.selectNumber').forEach((e)=>{
                 e.disabled = true;
@@ -56,9 +89,9 @@ function initializing(){
             });
         });
     });
-    document.querySelector('input[value=Next]').addEventListener('click', ()=>{ console.log('next');});
+    document.querySelector('input[value=Next]').addEventListener('click', getQuestion);
 }
 
 window.addEventListener('load', function(event){
-    initializing()
+    getQuestion()
 })
