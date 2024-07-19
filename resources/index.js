@@ -1,10 +1,21 @@
+let score = { 'score': 0, 'total': 0 }
 let chapter = {
-    '01': 0
-//    ,'02': 0
-//    ,'03': 0
-//    ,'04': 0
-//    ,'05': 0
+    '01': 6
+    ,'02': 0
+    ,'03': 33
+    ,'04': 0
+    ,'05': 0
 }
+
+let sampleQuestions = [
+    '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>',
+    '밑줄 친 부분과 의미가 비슷한 것을 고르세요.<br/><br/>',
+    '밑줄 친 부분이 틀린 것을 고르세요.<br/><br/>',
+    '다음의 내용과 같은 것을 고르세요.<br/><br/>',
+    '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><br/>',
+    '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><br/>',
+    '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><br/>',
+]
 
 function getRandomInt(max){
     return Math.floor(Math.random() * max);
@@ -24,7 +35,7 @@ function shuffle(array){
 
 function fntPlaySample(text){
     speechSynthesis.cancel();
-    text = text.replaceAll('<br/>','　');
+    text = text.replaceAll('<br/>','　').replaceAll('<u>','　').replaceAll('</u>','　');
     var msg = new SpeechSynthesisUtterance();
     msg.voice = speechSynthesis.getVoices()[15];
     msg.lang = 'ko';
@@ -38,6 +49,13 @@ function reset(){
 }
 
 function getQuestion(){
+    if(0 == list.length){
+        var msg = 'Score : ' + ('' + (score.score / score.total * 100)).split('.')[0];
+        msg += '\n' + score.score + ' / ' + score.total;
+        msg += '\n\nComplete!';
+        alert(msg);
+        location.href = '../../index.html';
+    }
     speechSynthesis.cancel();
     reset();
     shuffle(list);
@@ -79,6 +97,7 @@ function getQuestion(){
             var result = '<span class="fw-bold fs-1 text-danger">X</span>';
 
             if(e.dataset.value == obj.correct){
+                score.score += 1
                 result = '<span class="fw-bold fs-1 text-success">O</span>';
             }
             document.querySelector('#answer').innerHTML = result + '<br/><span class="text-light">' + obj.correct + '</span>';
@@ -93,5 +112,8 @@ function getQuestion(){
 }
 
 window.addEventListener('load', function(event){
-    getQuestion()
+    if(undefined != document.querySelector('#answer')){
+        score.total = list.length
+        getQuestion()
+    }
 })

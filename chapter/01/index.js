@@ -10,27 +10,27 @@ list.push(
             '안젤라는 라흐만하고 이야기를 해요.'
     ]},
     {
-        content : '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>머리가 아픕니다. 그래서 (　　　　)에 갑니다.'
+        content : sampleQuestions[0] + '머리가 아픕니다. 그래서 (　　　　)에 갑니다.'
         , correct : '약국'
         , list : ['학교','시장','공항']
     },
     {
-        content : '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>카페에서 (　　　　)을/를 마셔요.'
+        content : sampleQuestions[0] + '카페에서 (　　　　)을/를 마셔요.'
         , correct : '커피'
         , list : ['밥','빵','케이크']
     },
     {
-        content : '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>가 : 사과가 얼마에요?<br/>나 : 두 (　　　　)에 천 원이에요.'
+        content : sampleQuestions[0] + '가 : 사과가 얼마에요?<br/>나 : 두 (　　　　)에 천 원이에요.'
         , correct : '개'
         , list : ['병','권','마리']
     },
     {
-        content : '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>저는 비빔밥을 좋아해요. 그래서 (　　　　)에 자주 가요.'
+        content : sampleQuestions[0] + '저는 비빔밥을 좋아해요. 그래서 (　　　　)에 자주 가요.'
         , correct : '한식집'
         , list : ['중국집','일식집','이탈리아 식당']
     },
     {
-        content : '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>시장에서 사과를 (　　　　).'
+        content : sampleQuestions[0] + '시장에서 사과를 (　　　　).'
         , correct : '사요'
         , list : ['가요','봐요','해요']
     },

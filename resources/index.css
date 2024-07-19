@@ -1,0 +1,6 @@
+body{
+    max-width: 480px;
+    margin: auto;
+}
+
+#content{ text-align: left; }
