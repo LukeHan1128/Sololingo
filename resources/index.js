@@ -1,20 +1,20 @@
-let score = { 'score': 0, 'total': 0 }
+let score = { 'number': 0, 'score': 0, 'total': 0 }
 let chapter = {
-    '01': 6
-    ,'02': 0
-    ,'03': 33
-    ,'04': 0
-    ,'05': 0
+    '01': true
+    ,'02': false
+    ,'03': true
+    ,'04': false
+    ,'05': false
 }
 
 let sampleQuestions = [
-    '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><br/>',
-    '밑줄 친 부분과 의미가 비슷한 것을 고르세요.<br/><br/>',
-    '밑줄 친 부분이 틀린 것을 고르세요.<br/><br/>',
-    '다음의 내용과 같은 것을 고르세요.<br/><br/>',
-    '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><br/>',
-    '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><br/>',
-    '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><br/>',
+    '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><hr/>',
+    '밑줄 친 부분과 의미가 비슷한 것을 고르세요.<br/><hr/>',
+    '밑줄 친 부분이 틀린 것을 고르세요.<br/><hr/>',
+    '다음의 내용과 같은 것을 고르세요.<br/><hr/>',
+    '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><hr/>',
+    '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><hr/>',
+    '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><hr/>',
 ]
 
 function getRandomInt(max){
@@ -60,22 +60,31 @@ function getQuestion(){
     reset();
     shuffle(list);
     var obj = list[0];
+    var eList = new Array();
+    var correctNumber = 0;
     list.shift();
+    score.number += 1
+    document.querySelector('#number').innerHTML = score.number;
 
-    obj.list.push(obj.correct);
     shuffle(obj.list);
+    eList.push(obj.list[0]);
+    eList.push(obj.list[1]);
+    eList.push(obj.list[2]);
+    eList.push(obj.correct);
+    shuffle(eList);
 
     document.querySelector('#content').innerHTML = obj.content;
 
     var example = '';
-    for(var i=0; i<obj.list.length ;++i){
-        example += '<div class="col-12 mb-3 text-start">';
+    for(var i=0; i<eList.length ;++i){
+        example += '<div class="col-12 mb-3 text-start out-line">';
         example += '  <input type="button" value="' + (i+1) + '"';
         example += '    class="btn btn-info fw-bold text-light align-middle selectNumber"';
-        example += '    data-value="' + obj.list[i] + '">';
-        example += '  <span class="align-middle"> ' + obj.list[i] + '</span>';
-        example += getPlayIcon(obj.list[i]);
+        example += '    data-value="' + eList[i] + '">';
+        example += '  <div class="d-inline-block align-middle"> ' + eList[i] + '</div>';
+        example += getPlayIcon(eList[i]);
         example += '</div>';
+        if(obj.correct == eList[i]) correctNumber = i+1
     };
     document.querySelector('#buttons').innerHTML = example;
 
@@ -100,7 +109,7 @@ function getQuestion(){
                 score.score += 1
                 result = '<span class="fw-bold fs-1 text-success">O</span>';
             }
-            document.querySelector('#answer').innerHTML = result + '<br/><span class="text-light">' + obj.correct + '</span>';
+            document.querySelector('#answer').innerHTML = '<hr/>' + result + '<br/><div class="text-start text-light">' + correctNumber + '. ' + obj.correct + '</div>';
 
             document.querySelectorAll('.selectNumber').forEach((e)=>{
                 e.disabled = true;
@@ -114,6 +123,8 @@ function getQuestion(){
 window.addEventListener('load', function(event){
     if(undefined != document.querySelector('#answer')){
         score.total = list.length
+        document.querySelector('#total').innerHTML = score.total;
+        document.querySelector('#number').innerHTML = score.number;
         getQuestion()
     }
 })

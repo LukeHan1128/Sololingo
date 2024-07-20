@@ -2,5 +2,20 @@ body{
     max-width: 480px;
     margin: auto;
 }
-
-#content{ text-align: left; }
+h1{ position: relative; }
+h1 > div{
+    float: right;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.d-inline-block.align-middle{
+    margin-left: 10px;
+    width: calc(100% - 100px);
+}
+.out-line{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+}
