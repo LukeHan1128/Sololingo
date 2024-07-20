@@ -15,6 +15,7 @@ let sampleQuestions = [
     '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><hr/>',
     '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><hr/>',
     '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><hr/>',
+    '밑줄 친 단어의 반대말을 고르세요.<br/><hr/>',
 ]
 
 function getRandomInt(max){
