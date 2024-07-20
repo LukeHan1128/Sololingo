@@ -33,9 +33,54 @@ function shuffle(array){
     array.sort(() => Math.random() - 0.5);
 }
 
+//function makeCunksOfText(text){
+//    const maxLength = 190;
+//    let speechChunks = [];
+//
+//    // Split the text into chunks of maximum length maxLength without breaking words
+//    while(text.length > 0){
+//        if(text.length <= maxLength){
+//            speechChunks.push(text);
+//            break;
+//        }
+//        let chunk = text.substring(0, maxLength + 1);
+//
+//        let lastSpaceIndex = chunk.lastIndexOf(' ');
+//        if(lastSpaceIndex !== -1){
+//            speechChunks.push(text.substring(0, lastSpaceIndex));
+//            text = text.substring(lastSpaceIndex + 1);
+//        }
+//        else{
+//            // If there are no spaces in the chunk, split at the maxLength
+//            speechChunks.push(text.substring(0, maxLength));
+//            text = text.substring(maxLength);
+//        }
+//    }
+//    return speechChunks
+//}
+//
+//
+//async function speakText(text){
+//    const speechChunks = makeCunksOfText(text);
+//    for(let i=0; i < speechChunks.length ;++i){
+//        await new Promise((resolve, reject) => {
+//            window.speechSynthesis.cancel();
+//            let speech = new SpeechSynthesisUtterance(speechChunks[i]);
+//            speech.voice = speechSynthesis.getVoices()[15];
+//            window.speechSynthesis.speak(speech);
+//            speech.onend = () => {
+//                resolve();
+//            };
+//            speech.onerror = (error) => {
+//                resolve();
+//            };
+//        });
+//    }
+//}
+
 function fntPlaySample(text){
     speechSynthesis.cancel();
-    text = text.replaceAll('<br/>','　').replaceAll('<u>','　').replaceAll('</u>','　');
+    text = text.replaceAll('<br/>','　').replaceAll('<hr/>','　').replaceAll('<u>','　').replaceAll('</u>','　');
     var msg = new SpeechSynthesisUtterance();
     msg.voice = speechSynthesis.getVoices()[15];
     msg.lang = 'ko';
@@ -91,13 +136,17 @@ function getQuestion(){
     document.querySelectorAll('.playExample').forEach((e)=>{
         e.addEventListener('click', ()=>{
             fntPlaySample(e.dataset.value);
+//            speakText(e.dataset.value);
         });
     });
 
     document.querySelector('.playContent').innerHTML = getPlayIcon(obj.content);
     document.querySelector('.playContent > svg').addEventListener(
         'click'
-        , () => { fntPlaySample(document.querySelector('.playContent > svg').dataset.value); }
+        , () => {
+            fntPlaySample(document.querySelector('.playContent > svg').dataset.value);
+//            speakText(document.querySelector('.playContent > svg').dataset.value);
+        }
     );
 
     document.querySelectorAll('.selectNumber').forEach((e)=>{
