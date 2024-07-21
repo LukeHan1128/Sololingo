@@ -1297,3 +1297,386 @@ list.push(
         , ['소심한 성격은 스트레스를 많이 받기 때문에 좋은 성격이 아니다.'
             ,'다른 사람들이 내 성격의 문제점을 말해 주면 고치려고 노력해야 한다.']
 ))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '요즘 자녀와 함께 살지 않고 혼자 사는 (　　　　) 이/가 늘고 있다.'
+        , '노인'
+        , ['상담','아이','교육','대여']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '우리 회사에서는 해외 근무 직원들의 건강 문제를 전화로 (　　　　) 해주기로 했다.'
+        , '상담'
+        , ['근무','아이','교육','대여']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + "'돌봄 서비스' 업무를 하는 사람들은 한 달에 한 번 반드시 업무 (　　　　) 을/를 받는다."
+        , '교육'
+        , ['근무','아이','상담','대여']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '우리 시에서는 구직자에게 면접 때 입을 정장을 무료로 (　　　　) 하는 서비스를 실시한다.'
+        , '대여'
+        , ['근무','아이','상담','교육']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '65세 이상의 노인들은 무료로 독감 예방 접종을 (　　　　).'
+        , '받을 수 있다'
+        , ['나눌 수 있다']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '인터넷에서도 육아 정보를 쉽게 (　　　　).'
+        , '얻을 수 있다'
+        , ['고를 수 있다']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '우리 부부는 회사에 출근하기 전에 어린이집에 아이를 (　　　　).'
+        , '맡긴다'
+        , ['대여한다']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '한국 생활에 대해 궁금하신 분은 상담을 (　　　　) 오세요.'
+        , '받으러'
+        , ['도우러']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '요즘은 주인 대신 반려동물을 (　　　　) 직업이 인기이다.'
+        , '돌보는'
+        , ['빌리는']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[8] + '작은 식당을 하나 열고 싶은데 방법을 모르겠어요.'
+        , '창업 지원 센터에서 무료로 창업 상담을 받을 수 있어요.'
+        , ["요즘은 '장난감 도서관'에 예약만 하면 대여해 줘요."
+            ,'검진을 받아 보는 게 어때요?'
+            ,'통번역 서비스를 신청해 보세요.']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[8] + '한국어를 잘 못해서 은행을 이용하기가 힘들어요.'
+        , '통번역 서비스를 신청해 보세요.'
+        , ["요즘은 '장난감 도서관'에 예약만 하면 대여해 줘요."
+            ,'검진을 받아 보는 게 어때요?'
+            ,'창업 지원 센터에서 무료로 창업 상담을 받을 수 있어요.']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[8] + '아이에게 다양한 장난감을 사주고 싶은데 너무 비싼 것 같아요.'
+        , "요즘은 '장난감 도서관'에 예약만 하면 대여해 줘요."
+        , ['통번역 서비스를 신청해 보세요.'
+            ,'검진을 받아 보는 게 어때요?'
+            ,'창업 지원 센터에서 무료로 창업 상담을 받을 수 있어요.']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[8] + '요즘 몸이 너무 피곤한데 왜 그런지 모르겠어요.'
+        , '검진을 받아 보는 게 어때요?'
+        , ['통번역 서비스를 신청해 보세요.'
+            ,"요즘은 '장난감 도서관'에 예약만 하면 대여해 줘요."
+            ,'창업 지원 센터에서 무료로 창업 상담을 받을 수 있어요.']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '이민자 지원 서비스가 시작됩니다!<br/>여러분의 한국 생활을 함께합니다!<br/><br/>문의: 070-3775-82XX<br/><br/>아직 한국어가 부족해서 말이 잘 안 통하세요?<br/>(　　　　)을/를 신청하세요.'
+        , '통번역 서비스'
+        , ['예방 접종','방문 상담','무료교육']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '이민자 지원 서비스가 시작됩니다!<br/>여러분의 한국 생활을 함께합니다!<br/><br/>문의: 070-3775-82XX<br/><br/>아이가 있어서 센터에 방문하기 어려우시지요?<br/>(　　　　)을/를 해 드립니다.'
+        , '방문 상담'
+        , ['예방 접종','무료교육','통번역 서비스']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '이민자 지원 서비스가 시작됩니다!<br/>여러분의 한국 생활을 함께합니다!<br/><br/>문의: 070-3775-82XX<br/><br/>컴퓨터를 배우고 싶은데 수업료가 부담되세요?<br/>(　　　　)을/를 받으세요.'
+        , '무료교육'
+        , ['예방 접종','방문 상담','통번역 서비스']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '이민자 지원 서비스가 시작됩니다!<br/>여러분의 한국 생활을 함께합니다!<br/><br/>문의: 070-3775-82XX<br/><br/>올겨울 독감 걱정은 안 하셔도 됩니다.<br/>(　　　　)도 받으실 수 있습니다.'
+        , '예방 접종'
+        , ['방문 상담','무료교육','통번역 서비스']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '여기서 공항까지'
+        , '어떻게 가는지 아세요?'
+        , ['어떤지 아세요?'
+            ,'몇 명 있는지 모르겠어요.'
+            ,'어디인지 알고 싶어요.'
+            ,'어떻게 만드는지 아세요?']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '지금 교실에 사람이'
+        , '몇 명 있는지 모르겠어요.'
+        , ['어떤지 아세요?'
+            ,'어떻게 가는지 아세요?'
+            ,'어디인지 알고 싶어요.'
+            ,'어떻게 만드는지 아세요?']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '이번 주말에 날씨가'
+        , '어떤지 아세요?'
+        , ['몇 명 있는지 모르겠어요.'
+            ,'어떻게 가는지 아세요?'
+            ,'어디인지 알고 싶어요.'
+            ,'어떻게 만드는지 아세요?']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '잡채를 먹고 싶은데'
+        , '어떻게 만드는지 아세요?'
+        , ['몇 명 있는지 모르겠어요.'
+            ,'어떻게 가는지 아세요?'
+            ,'어디인지 알고 싶어요.'
+            ,'어떤지 아세요?']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '무료로 컴퓨터를 배울 수 있는 곳이'
+        , '어디인지 알고 싶어요.'
+        , ['몇 명 있는지 모르겠어요.'
+            ,'어떻게 가는지 아세요?'
+            ,'어떻게 만드는지 아세요?'
+            ,'어떤지 아세요?']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '우유를 먹다'
+        , '잠이 들다'
+        , ['잃어버린 사진을 찾다'
+            ,'넘어지다'
+            ,'대구로 이사하다'
+            ,'가사를 잊어버리다']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '부산에서 살다'
+        , '대구로 이사하다'
+        , ['잃어버린 사진을 찾다'
+            ,'넘어지다'
+            ,'잠이 들다'
+            ,'가사를 잊어버리다']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '책상 서랍을 정리하다'
+        , '잃어버린 사진을 찾다'
+        , ['대구로 이사하다'
+            ,'넘어지다'
+            ,'잠이 들다'
+            ,'가사를 잊어버리다']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '노래를 부르다'
+        , '가사를 잊어버리다'
+        , ['대구로 이사하다'
+            ,'넘어지다'
+            ,'잠이 들다'
+            ,'잃어버린 사진을 찾다']
+))
+
+list.push(
+    new Question(
+        TYPES.GRAMMAR
+        , SAMPLE_QUESTIONS[8] + '계단을 내려가다'
+        , '넘어지다'
+        , ['대구로 이사하다'
+            ,'가사를 잊어버리다'
+            ,'잠이 들다'
+            ,'잃어버린 사진을 찾다']
+))
+
+list.push(
+    new Question(
+        TYPES.READ
+        , SAMPLE_QUESTIONS[8] + '[Web]<br/>행복 복지관<br/>'
+            + '이민자 상담<br/>국적, 비자, 취업, 의료, 자녀교육, 임신과 육아<br/><br/>'
+            + '무료 한국어 교실<br/>이민자와 이민자 자녀 한국어 교실 운영<br/><br/>'
+            + '문화생활, 휴식 공간<br/>요리·컴퓨터 강좌, 영화 관람, 전시회 장난감 대여<br/><br/>'
+            + '행복복지관은 이민자의 행복한 생활을 만들어 드립니다.<br/>문의: 0505-4126-7777<br/><br/>'
+            + '이 복지관에서 임신과 육아에 관련된 상담을 받을 수 있다.'
+        , 'O'
+        , ['X']
+))
+
+list.push(
+    new Question(
+        TYPES.READ
+        , SAMPLE_QUESTIONS[8] + '[Web]<br/>행복 복지관<br/>'
+            + '이민자 상담<br/>국적, 비자, 취업, 의료, 자녀교육, 임신과 육아<br/><br/>'
+            + '무료 한국어 교실<br/>이민자와 이민자 자녀 한국어 교실 운영<br/><br/>'
+            + '문화생활, 휴식 공간<br/>요리·컴퓨터 강좌, 영화 관람, 전시회 장난감 대여<br/><br/>'
+            + '행복복지관은 이민자의 행복한 생활을 만들어 드립니다.<br/>문의: 0505-4126-7777<br/><br/>'
+            + '이 복지관에서는 이민자와 그 자녀들도 무료로 한국어를 배울 수 있다.'
+        , 'O'
+        , ['X']
+))
+
+list.push(
+    new Question(
+        TYPES.READ
+        , SAMPLE_QUESTIONS[8] + '[Web]<br/>행복 복지관<br/>'
+            + '이민자 상담<br/>국적, 비자, 취업, 의료, 자녀교육, 임신과 육아<br/><br/>'
+            + '무료 한국어 교실<br/>이민자와 이민자 자녀 한국어 교실 운영<br/><br/>'
+            + '문화생활, 휴식 공간<br/>요리·컴퓨터 강좌, 영화 관람, 전시회 장난감 대여<br/><br/>'
+            + '행복복지관은 이민자의 행복한 생활을 만들어 드립니다.<br/>문의: 0505-4126-7777<br/><br/>'
+            + '이 복지관은 이민자에게 도움을 주는 곳이다.'
+        , 'O'
+        , ['X']
+))
+
+list.push(
+    new Question(
+        TYPES.READ
+        , SAMPLE_QUESTIONS[10] + '미래시에 위치한 행복 복지관은 지난 7일 상담, 문화 강좌, 전시회 등 지역 주민들끼리 서로 만나 정보를 교환하고 휴식을 취할 수 있는 공간을 마련했다. 행복 복지관은 휴식 공간과 문화 공간으로 나누어 운영할 계획인데 지하철역과 버스 정류장 가까이에 위치해 편리하게 이용할 수 있다.<br/>1층은 노인 이민자, 장애인 등 지역 주민이면 누구나 방문해 소통과 휴식을 할 수 있는 공간이다. 특히 이 휴식 공간에는 지역 예술인과 동호회원들의 그림.사진 · 공예품 등을 전시해 많은 지역 주민들에게 새로운 볼거리를 제공할 것이다. 2층은 문화 강좌, 전시회 개최. 직업 훈련. 북카페 등의 공간으로 만들어져 관심이 있는 지역 주민이면 언제든지 방문하여 이용할 수 있다.<br/><br/>무엇에 대한 이야기입니까?'
+        , '복지관 이용 소개'
+        , ['복지관에 가는 방법'
+            ,'복지관 이용 시간']
+))
+
+list.push(
+    new Question(
+        TYPES.READ
+        , SAMPLE_QUESTIONS[10] + '미래시에 위치한 행복 복지관은 지난 7일 상담, 문화 강좌, 전시회 등 지역 주민들끼리 서로 만나 정보를 교환하고 휴식을 취할 수 있는 공간을 마련했다. 행복 복지관은 휴식 공간과 문화 공간으로 나누어 운영할 계획인데 지하철역과 버스 정류장 가까이에 위치해 편리하게 이용할 수 있다.<br/>1층은 노인 이민자, 장애인 등 지역 주민이면 누구나 방문해 소통과 휴식을 할 수 있는 공간이다. 특히 이 휴식 공간에는 지역 예술인과 동호회원들의 그림.사진 · 공예품 등을 전시해 많은 지역 주민들에게 새로운 볼거리를 제공할 것이다. 2층은 문화 강좌, 전시회 개최. 직업 훈련. 북카페 등의 공간으로 만들어져 관심이 있는 지역 주민이면 언제든지 방문하여 이용할 수 있다.<br/><br/>윗글의 내용과 같은 것을 고르세요.'
+        , '이곳에서는 문화생활도 할 수 있고 휴식도 취할 수 있다.'
+        , ['이곳은 노인, 이민자, 장애인이 주로 이용하는 곳이다.'
+            ,'직업 훈련을 받고 싶으면 복지관 1층에 방문하면 된다.']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '(　　　　)이/가 작은 신발을 신고 걸어서 발이 아팠다.'
+        , '사이즈'
+        , ['색상','바느질','가격']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '고천 씨는 (　　　　)을/를 잘해서 직접 옷을 만들어서 입는다.'
+        , '바느질'
+        , ['색상','사이즈','가격']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '가게에서 마음에 드는 옷을 봤지만 (　　　　) 이/가 비싸서 사지 못했다.'
+        , '가격'
+        , ['색상','사이즈','바느질']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '파란색 티셔츠를 주문했는데 인터넷에서 본 사진과 (　　　　) 이/가 조금 달라서 환불하려고 한다.'
+        , '색상'
+        , ['가격','사이즈','바느질']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '살이 많이 빠져서 작년에 산 바지가 (　　　　).'
+        , '헐렁해졌다'
+        , ['날씬해졌다']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '셔츠의 단추가 (　　　　) 다시 바느질을 했다.'
+        , '떨어져서'
+        , ['내려가서']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '활짝 웃는 것을 보니 슬기는 선물이 마음에 (　　　　) 모양이다.'
+        , '드는'
+        , ['쓰는']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '이링 씨는 몸에 꽉 (　　　　) 옷을 자주 입는다.'
+        , '끼는'
+        , ['잡는']
+))
+
+list.push(
+    new Question(
+        TYPES.VOCABULARY
+        , SAMPLE_QUESTIONS[0] + '커피를 쏟아서 하얀색 바지에 (　　　　) 이 생겼다.'
+        , '얼룩'
+        , ['구멍']
+))

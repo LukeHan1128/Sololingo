@@ -218,10 +218,13 @@ function getQuestion(){
 window.addEventListener('load', function(event){
     if(undefined != document.querySelector('#answer')){
         var cnt = location.href.split('?')[1];
+
+        if(undefined == cnt || 0 <= cnt.length) location.href = '../../index.html';
         if('total' == cnt) cnt = list.length;
+
         SCORE.TOTAL = cnt;
         document.querySelector('#total').innerHTML = SCORE.TOTAL;
         document.querySelector('#number').innerHTML = SCORE.NUMBER;
-        getQuestion()
+        getQuestion();
     }
 })
