@@ -1,21 +1,39 @@
-let score = { 'number': 0, 'score': 0, 'total': 0 }
-let chapter = {
-    '01': true
+let SCORE = {
+    'NUMBER': 0
+    , 'SCORE': 0
+    , 'TOTAL': 0
+    , 'VOCABULARY': 0
+    , 'GRAMMAR': 0
+    , 'READ': 0
+    , 'VOCABULARY_TOTAL': 0
+    , 'GRAMMAR_TOTAL': 0
+    , 'READ_TOTAL': 0
+}
+let CHAPTER = {
+    '01': false
     ,'02': false
     ,'03': true
     ,'04': false
     ,'05': false
 }
+let TYPES = {
+    VOCABULARY: '어휘'
+    , GRAMMAR: '문법'
+    , READ: '읽기'
+}
 
-let sampleQuestions = [
-    '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><hr/>',
-    '밑줄 친 부분과 의미가 비슷한 것을 고르세요.<br/><hr/>',
-    '밑줄 친 부분이 틀린 것을 고르세요.<br/><hr/>',
-    '다음의 내용과 같은 것을 고르세요.<br/><hr/>',
-    '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><hr/>',
-    '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><hr/>',
-    '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><hr/>',
-    '밑줄 친 단어의 반대말을 고르세요.<br/><hr/>',
+let SAMPLE_QUESTIONS = [
+    /* 0 */ '(　　　　)에 들어갈 알맞은 것을 고르세요.<br/><hr/>',
+    /* 1 */ '밑줄 친 부분과 의미가 비슷한 것을 고르세요.<br/><hr/>',
+    /* 2 */ '밑줄 친 부분이 틀린 것을 고르세요.<br/><hr/>',
+    /* 3 */ '다음의 내용과 같은 것을 고르세요.<br/><hr/>',
+    /* 4 */ '다음 글에 대한 설명으로 옳은 것을 고르세요.<br/><hr/>',
+    /* 5 */ '다음 글에 대한 설명으로 옳지 않은 것을 고르세요.<br/><hr/>',
+    /* 6 */ '윗글의 중심 내용으로 옳은 것을 고르세요.<br/><hr/>',
+    /* 7 */ '밑줄 친 단어의 반대말을 고르세요.<br/><hr/>',
+    /* 8 */ '다음 글과 관계 있는 것을 고르세요.<br/><hr/>',
+    /* 9 */ '다음 글을 읽고 읽은 내용과 같으면 ○, 다르면 X 하세요.<br/><hr/>',
+    /*10 */ '다음 글을 읽고 물음에 하세요.<br/><hr/>',
 ]
 
 function getRandomInt(max){
@@ -95,9 +113,12 @@ function reset(){
 }
 
 function getQuestion(){
-    if(0 == list.length){
-        var msg = 'Score : ' + ('' + (score.score / score.total * 100)).split('.')[0];
-        msg += '\n' + score.score + ' / ' + score.total;
+    if(SCORE.NUMBER == SCORE.TOTAL || 0 == list.length){
+        var msg = 'Score : ' + ('' + (SCORE.SCORE / SCORE.TOTAL * 100)).split('.')[0];
+        msg += '\n' + SCORE.SCORE + ' / ' + SCORE.TOTAL;
+        msg += '\n\n - ' + TYPES.VOCABULARY + ' : ' + SCORE.VOCABULARY + ' / ' + SCORE.VOCABULARY_TOTAL;
+        msg += '\n - ' + TYPES.GRAMMAR + ' : ' + SCORE.GRAMMAR + ' / ' + SCORE.GRAMMAR_TOTAL;
+        msg += '\n - ' + TYPES.READ + ' : ' + SCORE.READ + ' / ' + SCORE.READ_TOTAL;
         msg += '\n\nComplete!';
         alert(msg);
         location.href = '../../index.html';
@@ -109,16 +130,28 @@ function getQuestion(){
     var eList = new Array();
     var correctNumber = 0;
     list.shift();
-    score.number += 1
-    document.querySelector('#number').innerHTML = score.number;
+    SCORE.NUMBER += 1
+    document.querySelector('#number').innerHTML = SCORE.NUMBER;
 
     shuffle(obj.list);
     eList.push(obj.list[0]);
-    eList.push(obj.list[1]);
-    eList.push(obj.list[2]);
+    if(undefined != obj.list[1]) eList.push(obj.list[1]);
+    if(undefined != obj.list[2]) eList.push(obj.list[2]);
     eList.push(obj.correct);
     shuffle(eList);
 
+    var lbl = document.querySelector('#label');
+    lbl.innerHTML = obj.type;
+
+    if(TYPES.VOCABULARY == obj.type){
+        lbl.className = 'font-weight-bold bg-primary bg-gradient';
+    }
+    else if(TYPES.GRAMMAR == obj.type){
+        lbl.className = 'font-weight-bold bg-warning bg-gradient';
+    }
+    else if(TYPES.READ == obj.type){
+        lbl.className = 'font-weight-bold bg-success bg-gradient';
+    }
     document.querySelector('#content').innerHTML = obj.content;
 
     var example = '';
@@ -155,15 +188,27 @@ function getQuestion(){
             speechSynthesis.cancel();
             var result = '<span class="fw-bold fs-1 text-danger">X</span>';
 
+            if(TYPES.VOCABULARY == obj.type) SCORE.VOCABULARY_TOTAL += 1
+            else if(TYPES.GRAMMAR == obj.type) SCORE.GRAMMAR_TOTAL += 1
+            else if(TYPES.READ == obj.type) SCORE.READ_TOTAL += 1
+
             if(e.dataset.value == obj.correct){
-                score.score += 1
+                SCORE.SCORE += 1
                 result = '<span class="fw-bold fs-1 text-success">O</span>';
+
+                if(TYPES.VOCABULARY == obj.type) SCORE.VOCABULARY += 1
+                else if(TYPES.GRAMMAR == obj.type) SCORE.GRAMMAR += 1
+                else if(TYPES.READ == obj.type) SCORE.READ += 1
             }
             document.querySelector('#answer').innerHTML = '<hr/>' + result + '<br/><div class="text-start text-light">' + correctNumber + '. ' + obj.correct + '</div>';
 
             document.querySelectorAll('.selectNumber').forEach((e)=>{
                 e.disabled = true;
-                document.querySelector('input[value=Next]').hidden = false;
+                if(SCORE.NUMBER == SCORE.TOTAL){
+                    getQuestion();
+                }else{
+                    document.querySelector('input[value=Next]').hidden = false;
+                }
             });
         });
     });
@@ -172,9 +217,11 @@ function getQuestion(){
 
 window.addEventListener('load', function(event){
     if(undefined != document.querySelector('#answer')){
-        score.total = list.length
-        document.querySelector('#total').innerHTML = score.total;
-        document.querySelector('#number').innerHTML = score.number;
+        var cnt = location.href.split('?')[1];
+        if('total' == cnt) cnt = list.length;
+        SCORE.TOTAL = cnt;
+        document.querySelector('#total').innerHTML = SCORE.TOTAL;
+        document.querySelector('#number').innerHTML = SCORE.NUMBER;
         getQuestion()
     }
 })

@@ -9,16 +9,22 @@
   <script src="resources/index.js"></script>
   <link rel="stylesheet" href="resources/index.css">
   <script>
+  function fntMoveChapter(idx){
+    var qVal = document.querySelector('input[name=questions]:checked').value;
+    if(undefined == qVal) return
+    location.href='chapter/' + idx + '/index.html?' + qVal;
+  }
   window.addEventListener('load', function(event){
-    let keys = Object.keys(chapter);
+    let keys = Object.keys(CHAPTER);
 
     var example = '';
     for(var i=0; i<keys.length ;++i){
-      if(false == chapter[keys[i]]) continue
+      if(false == CHAPTER[keys[i]]) continue
       example += '<div class="col-12 mb-3 text-start">';
       example += '  <input type="button" value="Chapter ' + (keys[i]) + '"';
       example += '    class="btn btn-info fw-bold text-light align-middle w-100"';
-      example += '    onClick="location.href=\'chapter/' + keys[i] + '/index.html\'">';
+//      example += '    onClick="location.href=\'chapter/' + keys[i] + '/index.html\'">';
+      example += '    onClick="fntMoveChapter(\'' + keys[i] + '\')"';
       example += '</div>';
     };
     document.querySelector('#buttons').innerHTML = example;
@@ -30,6 +36,19 @@
     <header class="mb-auto">
       <h1 class="fw-bold text-light">Sololingo</h1>
       <div class="row">
+        <div class="col-12"><br/></div>
+        <div class="col-12 text-light">
+          <input type="radio" class="btn-check" name="questions" id="total" value="total" autocomplete="off" checked>
+          <label class="btn btn-outline-info" for="total">Total</label>
+          <input type="radio" class="btn-check" name="questions" id="q10" value="10" autocomplete="off">
+          <label class="btn btn-outline-info" for="q10">10</label>
+          <input type="radio" class="btn-check" name="questions" id="q20" value="20" autocomplete="off">
+          <label class="btn btn-outline-info" for="q20">20</label>
+          <input type="radio" class="btn-check" name="questions" id="q50" value="50" autocomplete="off">
+          <label class="btn btn-outline-info" for="q50">50</label>
+          <input type="radio" class="btn-check" name="questions" id="q100" value="100" autocomplete="off">
+          <label class="btn btn-outline-info" for="q100">100</label>
+        </div>
         <div class="col-12"><br/></div>
         <div class="col-12 text-light" id="buttons"></div>
 
