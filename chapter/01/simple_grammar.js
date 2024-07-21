@@ -1,5 +1,3 @@
-let list = new Array();
-
 list.push(
     {
         content : SAMPLE_QUESTIONS[4] + '지금 교실에 학생들이 있어요. 후엔, 안젤라, 라흐만이 있어요. 잠시드는 오늘 학교에 안왔어요. 후엔은 숙제를 해요. 안젤라는 전화를 해요. 라흐만은 빵을 먹어요.'

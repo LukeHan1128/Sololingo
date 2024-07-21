@@ -1,3 +1,4 @@
+let list = new Array();
 let SCORE = {
     'NUMBER': 0
     , 'SCORE': 0
