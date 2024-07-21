@@ -219,7 +219,9 @@ window.addEventListener('load', function(event){
     if(undefined != document.querySelector('#answer')){
         var cnt = location.href.split('?')[1];
 
-        if(undefined == cnt || 0 <= cnt.length) location.href = '../../index.html';
+        if(undefined == cnt || (typeof cnt == 'string' && 0 >= cnt.length)){
+            location.href = '../../index.html';
+        }
         if('total' == cnt) cnt = list.length;
 
         SCORE.TOTAL = cnt;
