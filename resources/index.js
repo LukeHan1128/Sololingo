@@ -6,6 +6,7 @@ let SCORE = {
     , 'VOCABULARY': 0
     , 'GRAMMAR': 0
     , 'READ': 0
+    , 'SPELLING': 0
     , 'VOCABULARY_TOTAL': 0
     , 'GRAMMAR_TOTAL': 0
     , 'READ_TOTAL': 0
@@ -21,6 +22,7 @@ let TYPES = {
     VOCABULARY: '어휘'
     , GRAMMAR: '문법'
     , READ: '읽기'
+    , SPELLING: '철자'
 }
 
 let SAMPLE_QUESTIONS = [
