@@ -1,7 +1,7 @@
 /****** 3단계평가 (필기) ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '불고기는 간장, 설탕 등의 (　　　　) 이/가 들어간다.'
         , '양념'
         , ['기름','양파','나물']
@@ -9,7 +9,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '나는 취업 준비를 하려고 컴퓨터 자격증 과정을 (　　　　).'
         , '신청했다'
         , ['실시했다','운영했다','추천했다']
@@ -17,7 +17,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '한국에 와서 성격도 (　　　　) 친구들도 많아졌다.'
         , '활발해지고'
         , ['나빠지고','예민해지고','무뚝뚝해지고']
@@ -25,7 +25,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '택배를 보낼 때는 주소를 (　　　　) 써 주세요.'
         , '정확히'
         , ['원만히','간편히','특별히']
@@ -33,7 +33,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 다음 주에 쓸 자재를 언제까지 주문하면 돼요?<br/>'
             + '나: 내일 (　　　　) 다음 주에 도착할 거예요.'
         , '주문해야'
@@ -42,7 +42,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 라흐만 씨는 왜 한국어를 배워요?<br/>'
             + '나: 저는 통역사가 (　　　　) 한국어를 공부해요.'
         , '되기 위해서'
@@ -51,7 +51,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 휴대폰이 고장 났어요?<br/>'
             + '나: 네. 어제 바닥에 (　　　　) 잘 안돼요.'
         , '떨어뜨려서 그런지'
@@ -90,7 +90,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 후엔 씨는 오늘 출근을 안 했어요?<br/>'
             + '나: (　　　　) 어제 잘 쉬고 오겠다고 인사도 했어요.'
         , '휴가를 갔잖아요'
@@ -99,7 +99,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 이 책상은 너무 오래돼서 버려야겠어요.<br/>'
             + '나: (　　　　) 부러진 곳도 없어요.'
         , '아직 쓸만해요'
@@ -108,7 +108,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 내일 체육대회인데 비가 많이 온다고 해요.<br/>'
             + '나: (　　　　)? 내일 같은 날에 야외 행사는 무리예요.'
         , '연기하는 게 어때요'
@@ -211,7 +211,7 @@ list.push(
 /****** 3단계평가 1과 대인관계 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '입사한 지 얼마 안 되어서 그런지 다른 직원들과 (　　　　)이/가 없어 서 대화를 이어나가기가 좀 힘들어요.'
         , '공감대'
         , ['방법','편견','생활 방식','지키다','끊기다','대하다','솔직하다','정확하다','거절하다']
@@ -219,7 +219,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '좋은 인간관계를 맺으려면 예의를 (　　　　) 것이 중요하다.'
         , '지키는'
         , ['방법','편견','공감대','생활 방식','끊기는','대하는','솔직한','정확한','거절하는']
@@ -227,7 +227,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '한국에서 친하게 지내던 친구가 고향에 돌아간 후 연락이 (　　　　) 걱정이 된다.'
         , '끊겨서'
         , ['방법','편견','생활 방식','지켜서','공감대','대해서','솔직해서','정확해서','거절해서']
@@ -235,7 +235,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '아직 한국어가 서툴러서 내 의도를 (　　　　) 표현하기가 어렵다.'
         , '정확하게'
         , ['방법','편견','생활 방식','지키게','공감대','대하게','솔직하게','끊기게','거절하게']
@@ -243,7 +243,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 한국에 와서 어떤 점이 가장 힘들었어요?<br/>'
             + '나: 고향에서는 의자를 많이 사용했는데 한국은 고향과 (　　　　) 이/가 달라서 바닥에 앉아야 하는 게 힘들었어요.'
         , '생활 방식'
@@ -252,7 +252,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 새로운 회사에 잘 적응했어요?<br/>'
             + '나: 아직 일하는 (　　　　) 을/를 잘 몰라서 당황할 때가 많아요.'
         , '방법'
@@ -261,7 +261,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 지난번에 말한 동아리에 가입했어?<br/>'
             + '나: 응, 가입해서 활동하고 있는데 선배들을 (　　　　) 어려워.'
         , '대하기가'
@@ -270,7 +270,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 룸메이트가 밤늦게까지 불을 켜고 게임을 해서 너무 화가 나.<br/>'
             + '나: 룸메이트에게 너의 의견을 (　　　　) 말해 보는 게 어때?'
         , '솔찍하게'
@@ -301,7 +301,7 @@ list.push(
 /****** 3단계평가 2과 성격 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '저는 성격이 급해서 뭐든지 빨리 해야 하지만 제 동생은 성격이 (　　　　) 뭐든지 천천히 해요.'
         , '느긋해서'
         , ['책임감이 강해서','호기심이 많아서','유머 감각이 좋아서','예민해서','다정해서'
@@ -310,7 +310,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '(　　　　) 사람은 문제가 생기면 지켜보기만 하고 해결하려고 하지 않는다.'
         , '소극적인'
         , ['책임감이 강한','호기심이 많은','유머 감각이 좋은','예민한','다정한'
@@ -319,7 +319,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '후엔 씨는 (　　　　) 성격이어서 모든 일을 메모하고 여러 번 확인한다.'
         , '꼼꼼한'
         , ['책임감이 강한','호기심이 많은','유머 감각이 좋은','예민한','다정한'
@@ -328,7 +328,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '민수 씨는 성격이 (　　　　) 퇴근한 후에 아이들과 잘 놀아 준다.'
         , '다정해서'
         , ['책임감이 강해서','호기심이 많아서','유머 감각이 좋아서','예민해서','꼼꼼해서'
@@ -337,7 +337,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 제이슨 씨, 많이 피곤해요?<br/>'
             + '나: 네, 어제 위층이 시끄러워서 잠을 못 잤어요. 저는 (　　　　) 성격 이라서 작은 소리에도 잘 깨요.'
         , '예민한'
@@ -347,7 +347,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 민수 씨는 인기가 많은 것 같아요. 항상 주위에 친구들이 많아요.<br/>'
             + '나: 네, 민수 씨는 (　　　　) 이/가 있어서 사람들이 모두 좋아해요.'
         , '유머 감각'
@@ -357,7 +357,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 사회복지사가 되려면 어떤 성격이 좋을까요?<br/>'
             + '나: 사회복지사는 주변의 어려운 사람들을 도와줘야 하니까 정이 많고 (　　　　) 이/가 강하면 좋을 것 같아요.'
         , '책임감'
@@ -367,7 +367,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 아버지는 어떤 분이세요?<br/>'
             + '나: 우리 아버지는 (　　　　) 활발하신 편이라서 모임에 참석하는 것도 좋아하시고 주변에 아는 사람도 많아요.'
         , '적극적이시고'
@@ -390,7 +390,7 @@ list.push(
 /****** 3단계평가 3과 지역 복지 서비스 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '일하는 직장에서 두 달 동안 월급을 받지 못해서 외국인노동자지원센터 를 통해 임금 체불 (　　　　) 을/를 받았다.'
         , '상담'
         , ['노인','아이','교육','구직','예방 접종'
@@ -399,7 +399,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '요즘은 반려동물을 대신 (　　　　) 주는 호텔이 생겨서 해외여행 등으 로 집을 비우는 사람들에게 편의를 제공하고 있습니다.'
         , '돌봐'
         , ['노인을','아이를','교육을','구직을','예방 접종을'
@@ -408,7 +408,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '과거와 달리 요즘에는 자녀와 따로 사는 (　　　　) 들이 증가하고 있다.'
         , '노인'
         , ['돌보다','아이','교육','구직','예방 접종'
@@ -417,7 +417,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '요즘은 맞벌이 부부가 많아서 어린이집에 아이를 (　　　　) 부모들이 많아요.'
         , '맡기는'
         , ['돌보는','아이는','교육을','구직을','예방 접종을'
@@ -426,7 +426,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 어디에서 장난감을 (　　　　) 수 있어요?<br/>'
             + '나: 육아종합지원센터에 가 보세요. 거기에서 빌릴 수 있어요.'
         , '대여 할'
@@ -436,7 +436,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 지난달에 회사가 문을 닫아서 다시 일자리를 알아보고 있어요.<br/>'
             + '나: 외국인노동자지원센터에 가서 (　　　　) 상담을 받아 보세요. '
             + '저도 거기서 상담을 받다가 얼마 전에 취직했어요.'
@@ -447,7 +447,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 이번 주 토요일에 센터에서 외국인 근로자를 대상으로 (　　　　) 을/를 하는데 같이 갈래요?<br/>'
             + '나: 어, 정말요? 요즘 자주 피곤해서 병원에 가서 해 보려고 했는데 잘 됐네요. 같이 가요.'
         , '건강 검진'
@@ -457,7 +457,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 독감 (　　　　) 은/는 비용이 얼마예요?<br/>'
             + '나: 어린이, 임산부, 어르신들은 무료인데 가까운 병원에 한번 문의해 보세요.'
         , '예방 접종'
@@ -490,7 +490,7 @@ list.push(
 /****** 3단계평가 4과 교환과 환불 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '인터넷에서 사진으로 본 것보다 (　　　　) 이/가 어두워서 밝은 것으로 바꿔야 할 것 같아요.'
         , '색상'
         , ['얼룩','사이즈','개봉하다','헐렁하다','교환하다'
@@ -499,7 +499,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '눈으로 볼 때 맞을 것 같아서 사 왔는데 집에 와서 입어 보니까 (　　　　). 다시 가서 작은 바지로 바꿔야겠어요.'
         , '헐렁해요'
         , ['얼룩해요','사이즈해요','개봉해요','색상해요','교환해요'
@@ -508,7 +508,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '흐엉 씨는 택배가 오자마자 그 자리에서 (　　　　) 제품에 문제가 없는지 확인했다.'
         , '개봉해서'
         , ['얼룩해서','사이즈해서','헐렁해서','색상해서','교환해서'
@@ -517,7 +517,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '구입 후 7일 이내에 영수증을 가지고 오시면 교환이나 환불이 (　　　　).'
         , '가능합니다'
         , ['얼룩합니다','사이즈합니다','헐렁합니다','색상합니다','교환합니다'
@@ -526,7 +526,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 제품을 사용하다가 문제가 생기면 어떻게 해야 돼요?<br/>'
             + '나: 고객 센터에 (　　　　). 그러면 고객 센터에서 해결 방법을 안내 해 줄 거예요.'
         , '문의하세요'
@@ -536,7 +536,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 티셔츠가 좀 끼는 것 같지 않아?<br/>'
             + '나: 그런 것 같네. 좀 큰 (　　　　) (으)로 사야겠어.'
         , '사이즈'
@@ -546,7 +546,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 여기 바느질이 잘못되었네요. 다른 옷으로 (　　　　) 주세요.<br/>'
             + '나: 그러네요. 다른 제품으로 바꿔 드리겠습니다.'
         , '교환해'
@@ -556,7 +556,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 어제 산 옷을 환불하고 싶은데요.<br/>'
             + '나: 환불하시려면 가격표를 (　　　　) 마시고 영수증과 같이 제품을 가지고 방문해 주십시오.'
         , '훼손하지'

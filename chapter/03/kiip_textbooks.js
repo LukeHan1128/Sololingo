@@ -1,7 +1,7 @@
 /****** 복습1 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '승기와 윤경은 원래 같은 회사의 직장 (　　　　) 였다. 두 사람은 1년간 연애를 하다가 부부가 되었다.'
         , '동료'
         , ['고부','상사','선배','주부','후배','시부','사촌']
@@ -9,7 +9,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '학교에 다닐 때는 아주 친했는데 몇 년 동안 (　　　　) 친구에게서 이메일이 왔다. 아주 반가웠다. 우리는 다음 주에 만나기로 했다.'
         , '연락이 끊긴'
         , ['잘 지내는','공감대가 생긴','사이가 좋은','공감대가 없는']
@@ -17,7 +17,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 제 딸은 성격이 (　　　　) 편이에요. 무슨 일이든지 해 보려고 하고 사람들 앞에 서는 것도 좋아해요.<br/>나: 그래요? 친구들도 많고 학교생활도 잘하겠네요.'
         , '적극적인'
         , ['소극적인','꼼꼼한','무뚝뚝한','답답한','덜렁거리는','친근한','살가운','까칠한']
@@ -25,7 +25,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '우리 동네 복지 센터에는 좋은 프로그램이 많다. 나는 취업 준비를 위해서 컴퓨터 자격증 과정을 (　　　　).'
         , '신청했다'
         , ['해결했다','운영했다','제공했다','성공했다','관리했다']
@@ -33,7 +33,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 이 티셔츠 지난주에 산 건데 얼룩이 있어서요.<br/>나: 아, 죄송합니다. 그럼 다른 걸로 교환해 드릴까요?<br/>가: 아니요. (　　　　) 주세요.'
         , '환불해'
         , ['훼손해','사용해','문의해','교환해','따뜻해']
@@ -41,7 +41,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 이번 달은 지난달에 비해 생활비가 너무 많이 들었어요.<br/>나: 그래요? 어떤 항목에서 (　　　　)이 많았는지 한번 살펴보세요.'
         , '지출'
         , ['적립','구입','절약','사용','판매']
@@ -283,7 +283,7 @@ list.push(
 /****** 복습2 ******/
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '영화관에서는 휴대 전화의 (　　　　)을 끄세요.'
         , '전원'
         , ['액정','전등','화면','게임','채팅']
@@ -291,7 +291,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '10도가 넘는 (　　　　) 때문에 감기 환자가 갑자기 많아졌다고 합니다.'
         , '일교차'
         , ['습도','호우','한파','뇌우','우박','스콜','폭염']
@@ -299,7 +299,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 욕실에 무슨 문제 있어요?<br/>나: 네. 하수구가 (　　　　) 물이 잘 내려가지 않네요.'
         , '막혀서'
         , ['새서','잠겨서','말라서','깨져서','냄새나서','깨끗해서','더러워서']
@@ -307,7 +307,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 과장님이 무슨 일을 시켰어요?<br/>나: 이번 주 작업 일지를 (　　　　) 제출하라고 하셨어요.'
         , '작성해서'
         , ['버려서','주문해서','유지해서','정비해서','잘라서','먹어서']
@@ -315,7 +315,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 정월 대보름에 보통 뭐 해요?<br/>나: 보름달을 보며 소원을 (　　　　).'
         , '빌어요'
         , ['보내요','먹어요','즐겨요','지내요','만들어요','뛰어요','들어요']
@@ -323,7 +323,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '동생이 지난달부터 학업과 직장 생활을 (　　　　) 있어서 정신없이 바빠요.'
         , '병행하고'
         , ['안하고','정리하고','참여하고','되풀이하고','따라가고']
@@ -331,7 +331,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '나는 얼마 전에 휴대 전화를 바꾸면서 다른 통신사에 (　　　　).'
         , '가입했다'
         , ['탈퇴했다','개통했다','입력했다','접속했다','철회했다','삭제했다']

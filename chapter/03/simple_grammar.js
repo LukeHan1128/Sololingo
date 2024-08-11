@@ -33,7 +33,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '에어컨을 (　　　　) 자서 감기에 걸렸다.'
         , '켜 놓은 채로'
         , ['켜 놓느라고','켜 놓는 동안','켜 놓을 텐데']
@@ -41,7 +41,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '건강 검진을 (　　　　) 가까운 보건소를 방문하면 된다.'
         , '받으려면'
         , ['받아도','받아서','받으면','받고','받었으면']
@@ -49,7 +49,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '수리 기사가 휴대폰을 (　　　　) 나는 신문을 읽으면서 기다렸다.'
         , '수리하는 동안'
         , ['수리하는지','수리하느라고','수리한다고','수리한 채로']
@@ -57,7 +57,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '한국 공항에 (　　　　) 고향에 계시는 어머니께 전화를 드렸다.'
         , '도착하자마자'
         , ['도착해도','도착했지만','도착하느라고','도착할 텐데']
@@ -65,7 +65,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 바쁜데 그결혼식에 꼭 가야 돼요?<br/>나: 네, 친한 친구라서 (　　　　) 꼭 참성해야 돼요.'
         , '바빠도'
         , ['바쁘면','바쁠 텐데','바쁘기 때문에']
@@ -73,7 +73,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 주말에 본 공연 어땠어요? 괜찮았어요?<br/>나: 네, 무대도 환상적이고 연기도 실감 나서 정말 (　　　　).'
         , '볼 만했어요'
         , ['볼래요','봤잖아요','보더라고요','봤어요','볼 수 있었어요']
@@ -115,7 +115,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '어젯밤에는 너무 추워서 감기에 (　　　　).'
         , '걸릴 뻔 했어요'
         , ['걸리세요','걸린 척했어요','걸렸잖아요','걸릴 만해요']
@@ -123,7 +123,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '요즘 회사에 (　　　　) 구인 광고를 찾아보고 있어요.'
         , '취직하기 위해서'
         , ['취직하느라고','취직하려면','취직할 텐데','취직한다면']
@@ -131,7 +131,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '전통 문화 체험을 (　　　　) 어떻게 해야 해요?'
         , '신청하려면'
         , ['신청온다면','신청할 겸','신청했던','신청이라도']
@@ -139,7 +139,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '건강이 (　　　　) 담배도 끊고 운동도 열심히 하고 있어요.'
         , '나빠질까 봐'
         , ['나빠질 정도로','나빠졌는데','나빠지기 위해서','나쁜 데다가']
@@ -147,7 +147,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '제 남자 친구는 (　　　　) 그림도 잘 그려서 인기가 많아요.'
         , '잘 생긴 데다가'
         , ['잘 생겼으면','잘 생겼을 겸','잘 생겨도','잘 생겼던']
@@ -155,7 +155,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '스트레스를 받을 때 운동을 하면 스트레스가 (　　　　).'
         , '풀려요'
         , ['놓여요','넣어요','풀여요','쌓여요','쌓아요']
@@ -181,7 +181,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '카드를 분실하면 카드회사에 전화해서 분실 (　　　　)를 해야 한다.'
         , '신고'
         , ['사용','카드','할부','낭비','구매']
@@ -189,7 +189,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '(　　　　)은 방바닥을 따뜻하게 하는 한국의 전통적인 난방 방법이다.'
         , '온돌'
         , ['마당','벽돌','대청','부엌','주방','들판']
@@ -197,7 +197,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '이번 주말에는 낚시 (　　　　) 회원들과 같이 강으로 낚시를 간다.'
         , '동호회'
         , ['출신','지역','신년회','송별회','교회','고향']
@@ -205,7 +205,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '한국에 온 지 얼마 안 돼서 한국 생활에 (　　　　) 않다.'
         , '익숙하지'
         , ['서운하지','그만하지','필요하지','사소하지']
@@ -213,7 +213,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '설날에 사람들을 만나면 (　　　　) 복 많이 받으라고 인사를 한다.'
         , '새해'
         , ['설날','세배','명절','추석']
@@ -221,7 +221,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 저 식당의 불고기가 그렇게 맛있어요?<br/>나: 네, 한 번 먹으면 다음 날 또 가고 (　　　　) 맛있어요.'
         , '싶을 정도로'
         , ['싶을 정도까지','싶을 정도부터','싶을 정도조차','싶을 정도밖에','싶을 정말로']
@@ -229,7 +229,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 새해에 세운 계획을 다 잘 지키고 있어요?<br/>나: 아니요, (　　　　) 제대로 하고 있는 게 없어요.'
         , '하나도'
         , ['하나중','하나까지','하나랑','하나처럼']
@@ -237,7 +237,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 평소 음악을 즐겨 들으시나 봐요.<br/>나: 네, 저는 음악을 들으면 기분이 (　　　　).'
         , '좋아지더라고요'
         , ['좋아질 만해요','좋아지기는요','좋아질 뻔했어요','좋아지나요','좋아졌을껄요']
@@ -245,7 +245,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 저 사람은 외국어를 참 잘하네요.<br/>나: 어렸을 때부터 외국 여기저기에서 살았으니 (　　　　).'
         , '잘할 수밖에 없지요'
         , ['잘하는 척했어요','잘할 껄 그랬어요','잘하라고 했어요','잘하시라 했어요']
@@ -253,7 +253,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 병원에 가야 하는데 한국말을 잘 못해서 걱정이에요.<br/>나: 남편이 같이 가서 (　　　　) 무슨 걱정이에요.'
         , '도와줄 텐데'
         , ['도와줄 겸','도와주었다가','도와주기 위해서','도와주는 데다가']
@@ -261,7 +261,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 오래 기다리게 해서 미안해요.<br/>나: 아니에요, 책을 (　　　　) 시간 가는 줄 몰랐어요.'
         , '읽느라고'
         , ['읽자마자','읽고나서','읽은 채로','읽기가 무섭게']
@@ -269,7 +269,7 @@ list.push(
 
 list.push(
     new Question(
-        TYPES.VOCABULARY
+        TYPES.SPELLING
         , SAMPLE_QUESTIONS[0] + '가: 바빠 보이는데 제가 좀 도와 드릴까요?<br/>나: 네, 그럼 제가 요리를 (　　　　) 청소 좀 해 주시겠어요?'
         , '하는 동안'
         , ['했던','할겸','할까 봐','하느라','했는데']
