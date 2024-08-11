@@ -155,6 +155,9 @@ function getQuestion(){
     else if(TYPES.READ == obj.type){
         lbl.className = 'font-weight-bold bg-success bg-gradient';
     }
+    else if(TYPES.SPELLING == obj.type){
+        lbl.className = 'font-weight-bold bg-info bg-gradient';
+    }
     document.querySelector('#content').innerHTML = obj.content;
 
     var example = '';
